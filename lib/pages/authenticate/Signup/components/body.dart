@@ -7,6 +7,7 @@ import 'package:pet_zone/components/rounded_input_field.dart';
 import 'package:pet_zone/components/rounded_password_field.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:pet_zone/services/auth.dart';
+import 'package:pet_zone/main.dart';
 
 class Body extends StatefulWidget {
 
@@ -69,6 +70,8 @@ class _BodyState extends State<Body> {
                 press: () async{
                   if(_formKey.currentState.validate()) {
                     dynamic result=await _auth.registerWithEmailAndPassword(email, password);
+                    Navigator.pushReplacement(
+                        context, MaterialPageRoute(builder: (BuildContext context) => MyApp()));
                     if(result==null){
                       setState(() {
                         error='please supply valid email';
