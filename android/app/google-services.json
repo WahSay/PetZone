@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1064500527678",
+    "firebase_url": "https://pet-zone-89f1d.firebaseio.com",
+    "project_id": "pet-zone-89f1d",
+    "storage_bucket": "pet-zone-89f1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064500527678:android:4ca414d655f3dcf721076f",
+        "android_client_info": {
+          "package_name": "shishi.pet_zone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064500527678-fon3df7gag992enqd60p0u5cni3dl2s1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwyjpcWxS-xaK9BVm5_ZRDVVVlC00J6f0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064500527678-fon3df7gag992enqd60p0u5cni3dl2s1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
