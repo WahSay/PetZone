@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:pet_zone/bottom_navi.dart';
 import 'package:pet_zone/pages/authenticate/authenticate.dart';
-import 'package:pet_zone/pages/home/home.dart';
 import 'package:provider/provider.dart';
 
 class Wrapper extends StatelessWidget {
@@ -14,7 +14,7 @@ class Wrapper extends StatelessWidget {
       return Authenticate();
     }
     else {
-      return Home();
+      return Navigation();
     }
   }
 }
