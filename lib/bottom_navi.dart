@@ -29,35 +29,43 @@ class _NavigationState extends State<Navigation> {
     return new Scaffold(
       body: _children[_selectedIndex],
       extendBody: true,
-      bottomNavigationBar: ClipRRect(
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.only(
+              topRight: Radius.circular(40), topLeft: Radius.circular(40)),
+          boxShadow: [
+            BoxShadow(color: Colors.black38, spreadRadius: 0, blurRadius: 10),
+          ],
+        ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.only(topLeft: Radius.circular(40.0), topRight: Radius.circular(40.0), ),
+          child: BottomNavigationBar(
+              currentIndex: _selectedIndex,
+              type: BottomNavigationBarType.fixed,
+              selectedItemColor: Colors.purple,
+              unselectedItemColor: kPrimaryColor,
+              iconSize: 30,
+              items:[
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.home),
+                    title: SizedBox.shrink()
+                ),
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.add_circle),
+                    title: SizedBox.shrink()
+                ),
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.favorite),
+                    title: SizedBox.shrink()
+                ),
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.person),
+                    title: SizedBox.shrink()
+                ),
+              ],
+              onTap: _onItemTapped
 
-        borderRadius: BorderRadius.only(topLeft: Radius.circular(40.0), topRight: Radius.circular(40.0), ),
-        child: BottomNavigationBar(
-            currentIndex: _selectedIndex,
-            type: BottomNavigationBarType.fixed,
-            selectedItemColor: Colors.purple,
-            unselectedItemColor: kPrimaryColor,
-            iconSize: 30,
-            items:[
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.home),
-                  title: SizedBox.shrink()
-              ),
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.add_circle),
-                  title: SizedBox.shrink()
-              ),
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.favorite),
-                  title: SizedBox.shrink()
-              ),
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.person),
-                  title: SizedBox.shrink()
-              ),
-            ],
-            onTap: _onItemTapped
-
+          ),
         ),
       ),
     );
