@@ -66,4 +66,23 @@ List<Pet> petList = [
       "assets/abys3.png",
     ],
   ),
+  Pet(
+    name: "Bonny",
+    type: "Alaskan",
+    isMale: false,
+    address: "2105  Westwood Avenue",
+    age: "2",
+    datetime: "Jan 26, 2020",
+    description:
+    "My hob requires moving to another country, I don't have the opportunity to take the cat with me. I am looking for good people who will shelter my Solo.",
+    distance: "Yangon",
+    userImage: "assets/user2.jpg",
+    userName: "Laudya Cintya Anggraini",
+    image: "assets/images/d1.jpg",
+    images: [
+      "assets/abys1.png",
+      "assets/abys2.png",
+      "assets/abys3.png",
+    ],
+  ),
 ];

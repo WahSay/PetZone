@@ -42,24 +42,25 @@ class _NavigationState extends State<Navigation> {
           child: BottomNavigationBar(
               currentIndex: _selectedIndex,
               type: BottomNavigationBarType.fixed,
-              selectedItemColor: Colors.purple,
-              unselectedItemColor: kPrimaryColor,
-              iconSize: 30,
               items:[
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.home),
+                    icon: Image.asset('assets/images/icons8-home-page-50.png',color: Colors.grey,height:25,),
+                    activeIcon: Image.asset('assets/images/icons8-home-page-50-2.png', color: Colors.pink[300],height:25),
                     title: SizedBox.shrink()
                 ),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.add_circle),
+                    icon:Image.asset('assets/images/icons8-quill-with-ink-50.png',color: Colors.grey,height:25),
+                    activeIcon: Image.asset('assets/images/icons8-quill-with-ink-50-2.png', color: Colors.purple,height:25),
                     title: SizedBox.shrink()
                 ),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.favorite),
+                    icon:Image.asset('assets/images/icons8-favorite-folder-50.png',color: Colors.grey[700],height:25),
+                    activeIcon: Image.asset('assets/images/icons8-favorite-folder-50-2.png', color: Colors.purple,height:25),
                     title: SizedBox.shrink()
                 ),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.person),
+                    icon:Image.asset('assets/images/icons8-male-user-50.png',color: Colors.grey,height:25),
+                    activeIcon: Image.asset('assets/images/icons8-male-user-50-2.png', color: Colors.purple,height:25),
                     title: SizedBox.shrink()
                 ),
               ],

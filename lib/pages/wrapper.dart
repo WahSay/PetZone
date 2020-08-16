@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:pet_zone/bottom_navi.dart';
 import 'package:pet_zone/pages/authenticate/authenticate.dart';
 import 'package:provider/provider.dart';
-import 'package:pet_zone/pages/home/home.dart';
+
 class Wrapper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class Wrapper extends StatelessWidget {
       return Authenticate();
     }
     else {
-      return Home();
+      return Navigation();
     }
   }
 }
