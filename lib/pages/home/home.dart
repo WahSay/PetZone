@@ -1,10 +1,10 @@
-import 'package:pet_zone/model/category.dart';
+
 import 'package:pet_zone/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:pet_zone/model/pet.dart';
 import 'package:pet_zone/widgets/pet_card.dart';
-import 'package:pet_zone/widgets/category_card.dart';
 import 'package:pet_zone/pages/home/pet_datail.dart';
+import 'package:pet_zone/widgets/cate.dart';
 class Home extends StatefulWidget {
   //Home({Key key}) : super(key: key);
   @override
@@ -37,19 +37,7 @@ class _HomeState extends State<Home> {
             child: Column(
               children: <Widget>[
                 SizedBox(height:15),
-                Container(
-                  width: double.infinity,
-                  height: 120.0,
-                  child: ListView.builder(
-                    itemCount: categoryList.length,
-                    scrollDirection: Axis.horizontal,
-                    shrinkWrap: true,
-                    itemBuilder: (context,index){
-                      var category=categoryList[index];
-                      return CategoryCard(category:category);
-                    },
-                  ),
-                ),
+                CategoryList(),
 
                 ListView.builder(
                   itemCount: petList.length,
@@ -81,3 +69,5 @@ class _HomeState extends State<Home> {
     );
   }
 }
+
+

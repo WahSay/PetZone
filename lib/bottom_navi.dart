@@ -3,7 +3,7 @@ import 'package:pet_zone/pages/home/home.dart';
 import 'package:pet_zone/pages/add.dart';
 import 'package:pet_zone/pages/favourite.dart';
 import 'package:pet_zone/pages/profile.dart';
-import 'package:pet_zone/constants.dart';
+
 
 class Navigation extends StatefulWidget {
   @override
