@@ -38,8 +38,8 @@ List<Pet> petList = [
     description:
         "My hob requires moving to another country, I don't have the opportunity to take the cat with me. I am looking for good people who will shelter my Solo.",
     distance: "Mandalay",
-    userImage: "assets/user2.jpg",
-    userName: "Laudya Cintya Anggraini",
+    userImage: "assets/images/user2.jpg",
+    userName: "Shi Shi",
     image: "assets/images/r1 Cropped.jpg",
     images: [
       "assets/abys1.png",
@@ -57,8 +57,8 @@ List<Pet> petList = [
     description:
         "My hob requires moving to another country, I don't have the opportunity to take the cat with me. I am looking for good people who will shelter my Solo.",
     distance: "Yangon",
-    userImage: "assets/user2.jpg",
-    userName: "Laudya Cintya Anggraini",
+    userImage: "assets/images/user2.jpg",
+    userName: "Sandy",
     image: "assets/images/d1.jpg",
     images: [
       "assets/abys1.png",
@@ -76,8 +76,8 @@ List<Pet> petList = [
     description:
     "My hob requires moving to another country, I don't have the opportunity to take the cat with me. I am looking for good people who will shelter my Solo.",
     distance: "Yangon",
-    userImage: "assets/user2.jpg",
-    userName: "Laudya Cintya Anggraini",
+    userImage: "assets/images/user2.jpg",
+    userName: "Mandy",
     image: "assets/images/d1.jpg",
     images: [
       "assets/abys1.png",
