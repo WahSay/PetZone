@@ -11,8 +11,7 @@ class Home extends StatefulWidget {
   _HomeState createState() => _HomeState();
 }
 class _HomeState extends State<Home> {
-
-  final AuthService _auth = AuthService();
+  
 
   @override
   Widget build(BuildContext context) {
@@ -23,15 +22,6 @@ class _HomeState extends State<Home> {
           title: Text('home'),
           backgroundColor: Colors.pink[100],
           elevation: 0.0,
-          actions: <Widget>[
-            FlatButton.icon(
-              icon: Icon(Icons.person),
-              label: Text('logout'),
-              onPressed: () async {
-                await _auth.signOut();
-              },
-            ),
-          ],
         ),
         body: SingleChildScrollView(
             child: Column(
