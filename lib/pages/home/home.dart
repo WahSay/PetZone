@@ -1,4 +1,5 @@
 
+import 'package:pet_zone/constants.dart';
 import 'package:pet_zone/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:pet_zone/model/pet.dart';
@@ -17,11 +18,11 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        backgroundColor: Colors.pink[50],
+        backgroundColor: Colors.grey[100],
         appBar: AppBar(
-          title: Text('home'),
-          backgroundColor: Colors.pink[100],
-          elevation: 0.0,
+          title: Text(' PetZone',style: kTitleStyle.copyWith(color: Colors.pinkAccent[100]),),
+          backgroundColor: Colors.white,
+          elevation: 5,
         ),
         body: SingleChildScrollView(
             child: Column(

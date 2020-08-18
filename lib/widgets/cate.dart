@@ -36,7 +36,7 @@ class _CategoryListState extends State<CategoryList> {
                 children: [
                   Card(
                     color: _selectedIndex != null && _selectedIndex == index
-                        ? Colors.pink[100]
+                        ? Colors.pink[200]
                         : Colors.white,
                     elevation: 13,
                     shape: RoundedRectangleBorder(

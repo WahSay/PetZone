@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pet_zone/constants.dart';
 import 'package:pet_zone/services/auth.dart';
+import 'package:pet_zone/widgets/profile_edit.dart';
 
 class Profile extends StatefulWidget {
   @override
@@ -14,6 +15,7 @@ class _ProfileState extends State<Profile> {
     return Container(
       child: SafeArea(
         child: Scaffold(
+          backgroundColor: Colors.grey[100],
           body: Column(
             children: <Widget>[
               Container(
@@ -78,7 +80,14 @@ class _ProfileState extends State<Profile> {
                     ),
                     color: Colors.pink[200],
                     padding: EdgeInsets.symmetric(vertical: 13,horizontal: 15),
-                    onPressed: (){},
+                    onPressed: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => EditProfile(),
+                        ),
+                      );
+                    },
                     child: Text('Edit Profile',style: kSubtitleStyle,),
                   ),
                   SizedBox(width: 60,),
